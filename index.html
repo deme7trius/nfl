@@ -1,0 +1,334 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+ <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <![endif]-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NFL TEMPLATE</title>
+  <script>document.write('<base href="' + document.location + '" />');</script>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="lightbox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="functions.js"></script>
+</head>
+<body id="Body" itemscope="" itemtype="http://schema.org/WebPage" ng-controller="MainCtrl">
+  <header id="main-header" style="background-image: url('images/mt-1127-header-bg.jpg')">
+    <div class="wrap">
+      <a href="#">
+        <figure class="logo">
+          <img src="images/mt-1127-logo.png" itemprop="ImageObject" alt="Field warrior logo" />
+          <span class="logo-text">FIELD WARRIOR</span>
+        </figure>
+      </a>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">TEAM</a></li>
+          <li><a href="#">GALLERY</a></li>
+          <li><a href="#">LEAGUE TABLE</a></li>
+          <li><a href="#">MATCH RESULTS</a></li>
+          <li><a href="#">CONTACTS</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="slider-text">
+      <h1>LOOK UP, GET UP AND NEVER GIVE UP</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, iure ex autem aliquid, a ipsa?</p>
+      <a href="#">MORE ABOUT US</a>
+    </div>
+  </header>
+  <main id="main">
+    <section id="last-score" style="background-image: url('images/mt-1127-content-bg-01.jpg');">
+      <div class="wrap">
+        <h2>SUN 6TH AUG, 12.00 PM <br>NATIONAL SPEEDWAY STADIUM</h2>
+        <div class="row">
+          <h3 class="tal">CHESTER <br><strong>ROMANS</strong></h3>
+          <div id="last-result"><span>7-8</span></div>
+          <h3 class="tar">MANCHESTER <br><strong>TITANS</strong></h3>
+        </div>
+        <h4>Final Result</h4>
+      </div>
+    </section>
+    <section id="testimonial">
+      <div class="wrap">
+        <div id="testimonial-text">
+          <span id="open-quotes">"</span>
+          <h2>Why are exceptional dribblers a rare commodity at the higher levels? Probably because players are so often discouraged from dribbling in their early years.</h2>
+          <h3>Mike Woitalla</h3>
+          <p>When players attend our club`s program our success will be measured by the fun they have had, the love for the game they’ve developed, and their individual ability to step on any soccer field with any player of their age and beat the competition.</p>
+        </div>
+        <div id="testimonial-image">
+          <figure>
+            <img src="images/mt-1127-testimonials-img.jpg" alt="Though guy" itemprop="ImageObject" />
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="schedule" ng-app="app"
+    <div class="wrap">
+      <h2>SCHEDULE</h2>
+      <h3>We are glad to announce our 2017 preseason schedule</h3>
+      <div ng-controller="ExampleController as vm" class="container">
+        <div class="text-center">
+
+          <!-- items being paged -->
+          <div ng-repeat="item in vm.items">
+            <ul class="row-items">
+              <li class="item">{{item.Team}}</li>
+              <li class="item">{{item.Team_preffered_name}}</li>
+              <li class="item">{{item.Team_city}}</li>
+              <li class="item">{{item.Team_Conference}}</li>
+              <li class="item">{{item.Team_Conference_Division}}</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- pager -->
+        <ul ng-if="vm.pager.pages.length" class="pagination">
+          <li ng-class="{disabled:vm.pager.currentPage === 1}">
+            <a ng-click="vm.setPage(1)">First</a>
+          </li>
+          <li ng-class="{disabled:vm.pager.currentPage === 1}">
+            <a ng-click="vm.setPage(vm.pager.currentPage - 1)">Previous</a>
+          </li>
+          <li ng-repeat="page in vm.pager.pages" ng-class="{active:vm.pager.currentPage === page}">
+            <a ng-click="vm.setPage(page)">{{page}}</a>
+          </li>                
+          <li ng-class="{disabled:vm.pager.currentPage === vm.pager.totalPages}">
+            <a ng-click="vm.setPage(vm.pager.currentPage + 1)">Next</a>
+          </li>
+          <li ng-class="{disabled:vm.pager.currentPage === vm.pager.totalPages}">
+            <a ng-click="vm.setPage(vm.pager.totalPages)">Last</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="parallax-one">
+    <div class="contain">
+      <a href="#" target="_blank"><i class="fa fa-play fa-4x" aria-hidden="true"></i></a>
+      <h2>FOOTBALL IS A GAME ABOUT FEELINGS AND INTELLIGENCE</h2>
+      <p>The game will teach you how hard you had to work to achieve something
+      </p>
+    </div>
+  </section>
+  <section id="our-groups">
+    <h2>OUR GROUPS</h2>
+    <p>Join one of our groups</p>
+    <div class="wrap">
+      <div class="group-item">
+        <figure>
+          <img src="images/mt-1127-team-img01.jpg" alt="professional"/>
+        </figure>
+        <a href="#">PROFESSIONAL</a>
+        <p>Players must be more than 18 years old and have a special experience.</p>
+      </div>
+      <div class="group-item">
+        <figure>
+          <img src="images/mt-1127-team-img02.jpg" alt="professional"/>
+        </figure>
+        <a href="#">UNIVERSITY AND COLLEGE</a>
+        <p>The minimum age is 17 years with consent forms required for those aged below 18 years.</p>
+      </div>
+      <div class="group-item">
+        <figure>
+          <img src="images/mt-1127-team-img03.jpg" alt="professional"/>
+        </figure>
+        <a href="#">JUNIOR</a>
+        <p>Players must be under 17 on the 31st of August in the year preceding the playing season.</p>
+      </div>
+    </div>
+  </section>
+  <section id="lightbox">
+    <div class="row">
+      <div class="column">
+        <img src="images/mt-1127-gallery-img01-bg.jpg" style="width:100%" class="hover-shadow cursor">
+        <div onclick="openModal();currentSlide(1)" class="layer"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></div>
+      </div>
+      <div class="column">
+        <img src="images/mt-1127-gallery-img02-bg.jpg" style="width:100%" class="hover-shadow cursor">
+        <div onclick="openModal();currentSlide(2)" class="layer"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></div>
+      </div>
+      <div class="column">
+        <img src="images/mt-1127-gallery-img03-bg.jpg" style="width:100%" class="hover-shadow cursor">
+        <div onclick="openModal();currentSlide(3)" class="layer"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></div>
+      </div>
+      <div class="column">
+        <img src="images/mt-1127-gallery-img04-bg.jpg" style="width:100%" class="hover-shadow cursor">
+        <div onclick="openModal();currentSlide(4)" class="layer"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></div>
+      </div>
+      <div class="column">
+        <img src="images/mt-1127-gallery-img05-bg.jpg" style="width:100%" class="hover-shadow cursor">
+        <div onclick="openModal();currentSlide(5)" class="layer"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></div>
+      </div>
+      <div class="column">
+        <img src="images/mt-1127-gallery-img06-bg.jpg" style="width:100%" class="hover-shadow cursor">
+        <div onclick="openModal();currentSlide(6)" class="layer"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></div>
+      </div>
+      <div class="column">
+        <img src="images/mt-1127-gallery-img07-bg.jpg" style="width:100%" class="hover-shadow cursor">
+        <div onclick="openModal();currentSlide(7)" class="layer"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></div>
+      </div>
+      <div class="column">
+        <img src="images/mt-1127-gallery-img08-bg.jpg" style="width:100%" class="hover-shadow cursor">
+        <div onclick="openModal();currentSlide(8)" class="layer"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></div>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 8</div>
+          <img src="images/mt-1127-gallery-img01-bg.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 8</div>
+          <img src="images/mt-1127-gallery-img02-bg.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 8</div>
+          <img src="images/mt-1127-gallery-img03-bg.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 8</div>
+          <img src="images/mt-1127-gallery-img04-bg.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 8</div>
+          <img src="images/mt-1127-gallery-img05-bg.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 8</div>
+          <img src="images/mt-1127-gallery-img06-bg.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 8</div>
+          <img src="images/mt-1127-gallery-img07-bg.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8 / 8</div>
+          <img src="images/mt-1127-gallery-img08-bg.jpg" style="width:100%">
+        </div>
+<!--         <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+
+        <div class="column">
+          <img class="demo cursor" src="images/mt-1127-gallery-img01-bg.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/mt-1127-gallery-img02-bg.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/mt-1127-gallery-img03-bg.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/mt-1127-gallery-img04-bg.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/mt-1127-gallery-img05-bg.jpg" style="width:100%" onclick="currentSlide(5)" alt="Northern Lights">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/mt-1127-gallery-img06-bg.jpg" style="width:100%" onclick="currentSlide(6)" alt="Northern Lights">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/mt-1127-gallery-img07-bg.jpg" style="width:100%" onclick="currentSlide(7)" alt="Northern Lights">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/mt-1127-gallery-img08-bg.jpg" style="width:100%" onclick="currentSlide(8)" alt="Northern Lights">
+        </div> -->
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </section>
+  <section id="coaches">
+    <h2>OUR COACHES</h2>
+    <p>We are pleased to announce our 2017 schedule</p>
+    <div class="wrap">
+      <div class="group-item">
+        <figure>
+          <img src="images/mt-1127-team-img04.jpg" alt="AUSTIN JOHNSTON"/>
+        </figure>
+        <a href="#">AUSTIN JOHNSTON</a>
+        <p>Head coach</p>
+      </div>
+      <div class="group-item">
+        <figure>
+          <img src="images/mt-1127-team-img05.jpg" alt="ANDREW WALLACE"/>
+        </figure>
+        <a href="#">ANDREW WALLACE</a>
+        <p>Defensive coordinator</p>
+      </div>
+      <div class="group-item">
+        <figure>
+          <img src="images/mt-1127-team-img06.jpg" alt="SAMUEL HUGHES"/>
+        </figure>
+        <a href="#">SAMUEL HUGHES</a>
+        <p>Quality control coach</p>
+      </div>
+    </div>
+  </section>
+  <section id="join-our-club">
+    <div id="join-text">
+     <h2>JOIN OUR CLUB</h2>
+     <p>We are glad to welcome you to our football family</p>
+     <a href="#">JOIN US</a>
+   </div>
+ </section>
+ <section id="news">
+   <h2>Latest News</h2>
+   <div class="wrap">
+     <script type="text/javascript" src="http://output23.rssinclude.com/output?type=js&amp;id=1160849&amp;hash=0d8cbe2b78c6bca28c3a384131369754"></script>
+   </div>
+ </section>
+ <section id="partners">
+  <div class="wrap">
+    <figure><img src="images/mt-1127-partners-icons01.png" alt="California"></figure>
+    <figure><img src="images/mt-1127-partners-icons02.png" alt="Tourner"></figure>
+    <figure><img src="images/mt-1127-partners-icons03.png" alt="Beats"></figure>
+    <figure><img src="images/mt-1127-partners-icons04.png" alt="Retro Press"></figure>
+    <figure><img src="images/mt-1127-partners-icons05.png" alt="Jameson"></figure>
+    <figure><img src="images/mt-1127-partners-icons06.png" alt="John Oaks"></figure>
+  </div>
+</section>
+</main>
+<footer id="footer">
+    <a href="#">
+      <figure class="logo">
+        <img src="images/mt-1127-logo.png" itemprop="ImageObject" alt="Field warrior logo" />
+        <span class="logo-text">FIELD WARRIOR</span>
+      </figure>
+    </a>
+    <ul id="socials">
+      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+    </ul>
+    <p>&copy; Copyright | FieldWarrior 2017. All Right Reserved <br>
+      Developed By</p>
+  </footer>
+  <script src="lightbox.js"></script>
+</body>
+</html>
