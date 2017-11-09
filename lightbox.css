@@ -11,6 +11,7 @@
   position: relative;
  height: 285px;
  overflow: hidden;
+ background-size: cover;
 }
 .column img{height: auto;}
 
@@ -31,7 +32,6 @@
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
   margin: auto;
   padding: 0;
   width: 90%;
@@ -57,10 +57,10 @@
 
 .mySlides {
   text-align: center;
-  background-color: rgba(0,0,0, 0.82);
   display: none;
-  max-height: 80vh;
+  height: 100vh;
 }
+.mySlides img{position: absolute;top: 50%;transform: translateY(-50%);max-height: 90vh;margin: 0 auto;left:0;right: 0;}
 
 .cursor {
   cursor: pointer
@@ -71,9 +71,9 @@
 .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 50%;
   width: auto;
-  padding: 50px;
+  padding: 20px;
   margin-top: -50px;
   color: white;
   font-weight: bold;

@@ -10,6 +10,7 @@
   <script>document.write('<base href="' + document.location + '" />');</script>
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="lightbox.css">
+  <link rel="stylesheet" href="media.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
@@ -60,7 +61,7 @@
     <section id="testimonial">
       <div class="wrap">
         <div id="testimonial-text">
-          <span id="open-quotes">"</span>
+          <span id="open-quotes">“</span>
           <h2>Why are exceptional dribblers a rare commodity at the higher levels? Probably because players are so often discouraged from dribbling in their early years.</h2>
           <h3>Mike Woitalla</h3>
           <p>When players attend our club`s program our success will be measured by the fun they have had, the love for the game they’ve developed, and their individual ability to step on any soccer field with any player of their age and beat the competition.</p>
@@ -150,36 +151,28 @@
   </section>
   <section id="lightbox">
     <div class="row">
-      <div class="column">
-        <img src="images/mt-1127-gallery-img01-bg.jpg" style="width:100%" class="hover-shadow cursor">
+      <div class="column" style="background-image: url('images/mt-1127-gallery-img01-bg.jpg');">
         <div onclick="openModal();currentSlide(1)" class="layer"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></div>
       </div>
-      <div class="column">
-        <img src="images/mt-1127-gallery-img02-bg.jpg" style="width:100%" class="hover-shadow cursor">
+      <div class="column" style="background-image: url('images/mt-1127-gallery-img02-bg.jpg');">
         <div onclick="openModal();currentSlide(2)" class="layer"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></div>
       </div>
-      <div class="column">
-        <img src="images/mt-1127-gallery-img03-bg.jpg" style="width:100%" class="hover-shadow cursor">
+      <div class="column" style="background-image: url('images/mt-1127-gallery-img03-bg.jpg');">
         <div onclick="openModal();currentSlide(3)" class="layer"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></div>
       </div>
-      <div class="column">
-        <img src="images/mt-1127-gallery-img04-bg.jpg" style="width:100%" class="hover-shadow cursor">
+      <div class="column" style="background-image: url('images/mt-1127-gallery-img04-bg.jpg');">
         <div onclick="openModal();currentSlide(4)" class="layer"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></div>
       </div>
-      <div class="column">
-        <img src="images/mt-1127-gallery-img05-bg.jpg" style="width:100%" class="hover-shadow cursor">
+      <div class="column" style="background-image: url('images/mt-1127-gallery-img10-bg.jpg');">
         <div onclick="openModal();currentSlide(5)" class="layer"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></div>
       </div>
-      <div class="column">
-        <img src="images/mt-1127-gallery-img06-bg.jpg" style="width:100%" class="hover-shadow cursor">
+      <div class="column" style="background-image: url('images/mt-1127-gallery-img06-bg.jpg');">
         <div onclick="openModal();currentSlide(6)" class="layer"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></div>
       </div>
-      <div class="column">
-        <img src="images/mt-1127-gallery-img07-bg.jpg" style="width:100%" class="hover-shadow cursor">
+      <div class="column" style="background-image: url('images/mt-1127-gallery-img07-bg.jpg');">
         <div onclick="openModal();currentSlide(7)" class="layer"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></div>
       </div>
-      <div class="column">
-        <img src="images/mt-1127-gallery-img08-bg.jpg" style="width:100%" class="hover-shadow cursor">
+      <div class="column" style="background-image: url('images/mt-1127-gallery-img08-bg.jpg');">
         <div onclick="openModal();currentSlide(8)" class="layer"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></div>
       </div>
     </div>
@@ -210,7 +203,7 @@
 
         <div class="mySlides">
           <div class="numbertext">5 / 8</div>
-          <img src="images/mt-1127-gallery-img05-bg.jpg" style="width:100%">
+          <img src="images/mt-1127-gallery-img10-bg.jpg" style="width:100%">
         </div>
 
         <div class="mySlides">
@@ -313,21 +306,21 @@
 </section>
 </main>
 <footer id="footer">
-    <a href="#">
-      <figure class="logo">
-        <img src="images/mt-1127-logo.png" itemprop="ImageObject" alt="Field warrior logo" />
-        <span class="logo-text">FIELD WARRIOR</span>
-      </figure>
-    </a>
-    <ul id="socials">
-      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-    </ul>
-    <p>&copy; Copyright | FieldWarrior 2017. All Right Reserved <br>
-      Developed By</p>
+  <a href="#">
+    <figure class="logo">
+      <img src="images/mt-1127-logo.png" itemprop="ImageObject" alt="Field warrior logo" />
+      <span class="logo-text">FIELD WARRIOR</span>
+    </figure>
+  </a>
+  <ul id="socials">
+    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+  </ul>
+  <p>&copy; Copyright | FieldWarrior 2017. All Rights Reserved <br>
+    Developed By</p>
   </footer>
   <script src="lightbox.js"></script>
 </body>

@@ -1,0 +1,104 @@
+@media all and (max-width: 1550px) {
+  #main-header {
+    background-position: center; }
+    #main-header #slider-text {
+      top: 30%;
+      left: 10%; }
+
+  #main #last-score {
+    background-size: contain; } }
+@media all and (max-width: 1225px) {
+  #main #join-our-club {
+    background-position: center;
+    text-align: center; }
+    #main #join-our-club a {
+      margin: 0 auto; }
+    #main #join-our-club #join-text {
+      width: 100%; }
+  #main #our-groups .wrap, #main #coaches .wrap {
+    grid-template-columns: 1fr 1fr; }
+    #main #our-groups .wrap .group-item:last-child, #main #coaches .wrap .group-item:last-child {
+      grid-column: auto / span 2; } }
+@media all and (max-width: 1225px) and (max-width: 810px) {
+  #main #partners .wrap {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px; }
+  #main #lightbox .row {
+    grid-template-columns: 1fr 1fr; }
+  #main #news .rssincl-content {
+    display: block;
+    padding: 20px; }
+  #main #our-groups .wrap, #main #coaches .wrap {
+    display: block; }
+    #main #our-groups .wrap a, #main #coaches .wrap a {
+      font-size: 19px; }
+    #main #our-groups .wrap .group-item, #main #coaches .wrap .group-item {
+      margin: 0 0 30px 0; } }
+@media all and (max-width: 520px) {
+  .column {
+    height: 188px; }
+
+  #main #partners .wrap {
+    grid-template-columns: 1fr 1fr; }
+  #main #news .rssincl-content {
+    display: block; }
+  #main #coaches .wrap {
+    display: block; }
+  #main #our-groups .wrap {
+    display: block; }
+    #main #our-groups .wrap img {
+      width: 100%; }
+  #main #schedule .pagination {
+    max-width: 320px; }
+    #main #schedule .pagination li {
+      margin: 0 5px;
+      font-size: 19px; }
+  #main #schedule .row-items {
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr; }
+    #main #schedule .row-items .item {
+      padding: 5px;
+      font-size: 14px;
+      margin-right: 0; }
+  #main #testimonial .wrap h2 {
+    font-size: 22px; }
+  #main #testimonial .wrap #open-quotes {
+    font-size: 50px; }
+  #main #testimonial .wrap div {
+    width: 100%; }
+    #main #testimonial .wrap div:first-child {
+      width: 100%;
+      max-width: 90%; }
+  #main #testimonial .wrap img {
+    width: 100%; }
+  #main #last-score {
+    background-position: bottom;
+    padding: 1px 0; }
+    #main #last-score h3 {
+      width: 35%; }
+    #main #last-score #last-result {
+      width: 30%; }
+      #main #last-score #last-result span {
+        width: auto;
+        padding: 0; }
+  #main #lightbox .row {
+    grid-template-columns: 1fr; }
+
+  #main-header #slider-text {
+    top: 30%;
+    left: 5%; }
+    #main-header #slider-text h1 {
+      font-size: 50px; }
+
+  #footer ul li {
+    width: 50px;
+    height: 50px;
+    line-height: 50px; }
+
+  .prev, .next {
+    top: 56%;
+    font-size: 30px; }
+
+  .layer {
+    line-height: 200px; } }
+
+/*# sourceMappingURL=media.css.map */
